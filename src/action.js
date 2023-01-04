@@ -8,7 +8,7 @@ async function run() {
   const oktokit = github.getOctokit(GITHUB_TOKEN);
 
   const randomPos = Math.round(Math.round() * 1000);
-  const url = `https://g.tenor.com/v1/search?q=excited&pos=${randomPos}&key=${TENOR_TOKEN}&limit=1&media_filter=minimal&contentfilter=high`;
+  const url = `https://g.tenor.com/v1/search?q=smile&pos=${randomPos}&key=${TENOR_TOKEN}&limit=1&media_filter=minimal&contentfilter=high`;
   const response = await fetch(url);
   const { results } = await response.json();
   const gifUrl = results[0].media[0].tinygif.url;
