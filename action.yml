@@ -1,0 +1,16 @@
+name : " Github Action Node"
+description : "First Example"
+author : "Smit Patel"
+
+
+inputs:
+  GITHUB_TOKEN:
+    description : "Github Token"
+    required :  true
+  TENOR_TOKEN:
+    description : "Tenor API Token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
